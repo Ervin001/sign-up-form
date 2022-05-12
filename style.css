@@ -4,4 +4,24 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1rem 3rem;
+  grid-template-rows: 1rem 1rem 1rem;
+  border: 1px solid #000;
 
+  height: 100vh;
+}
+
+.img {
+  width: 100%;
+}
+
+.info-text {
+}
+
+.form-info {
+}
+
+.button {
+}
