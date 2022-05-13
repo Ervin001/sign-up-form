@@ -16,10 +16,12 @@
   height: 100vh;
   width: 100vw;
   background-color: antiquewhite;
+  font-family: 'Inter', sans-serif;
 }
 
 .left {
   width: 40vw;
+  height: 100vh;
   position: relative;
 }
 
@@ -48,4 +50,36 @@
 
 .right {
   width: 60vw;
+  height: 100vh;
+}
+
+.small-container {
+  height: 30%;
+}
+
+.top {
+  flex: 1 0 auto;
+}
+.middle {
+  flex: 1 0 auto;
+  margin: 10px 20px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+
+  margin: 15px 0;
+  font-size: 1em;
+}
+
+input {
+  padding: 5px -5px;
+  width: 20%;
+  border: none;
+  border-radius: 5px;
+}
+
+.bottom {
+  flex: 1 0 auto;
 }
