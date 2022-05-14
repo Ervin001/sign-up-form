@@ -1,6 +1,10 @@
 :root {
-  --image-colors: #fff;
-  --button-color: rgb(242, 183, 170);
+  --background-color: rgb(249, 250, 251);
+  --form-color: rgb(255, 255, 255);
+  --button-color: rgb(10, 35, 53);
+  --font-color: rgb(165, 68, 46);
+  --font-color-form: rgb(72, 79, 89);
+  --form-input-color: rgb(255, 254, 254);
 }
 
 * {
@@ -11,126 +15,128 @@
 
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-
   height: 100vh;
-  width: 100vw;
-  background-color: antiquewhite;
   font-family: 'Inter', sans-serif;
 }
 
-.left {
-  width: 40vw;
-  height: 100vh;
+.hero {
+  flex-grow: 1;
   position: relative;
-}
-
-#image {
-  background-position: center;
-  background-size: auto;
-  /* background-repeat: no-repeat; */
   width: 40vw;
-}
-
-.logo {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--image-colors);
-}
-
-.photo-from {
-  position: absolute;
-  bottom: 1%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--image-colors);
-}
-
-.right {
-  width: 60vw;
+  min-width: 345px;
   height: 100vh;
+  background: url(./mehdi-messrro-M42bFz7miy4-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
-.small-container {
-  height: 30%;
+.bc {
+  background-color: var(--background-color);
 }
 
-.top {
-  flex: 1 0 auto;
-  font-size: 1em;
-}
-.middle {
-  flex: 1 0 auto;
-  padding: 10px 20px;
-  background-color: var(--image-colors);
-}
-
-.input {
+.info {
   display: flex;
   flex-direction: column;
 
-  margin: 15px 0;
-  font-size: 1em;
+  width: 60vw;
 }
 
-.lets-do-this {
-  font-size: 2rem;
-}
-
-.form-info {
+.info--top {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: flex-start;
+  justify-content: flex-end;
+  flex-grow: 1;
+  gap: 15px;
 
-  padding: 12px 12px;
+  margin: 15px 15px;
+  font-size: 1em;
+  width: auto;
 }
 
-.input--name {
+.sentence--one {
+  align-self: center;
+  width: auto;
+}
+
+.sentence--two {
+  margin-bottom: 15px;
+  width: auto;
+}
+
+.form-box {
   display: flex;
 }
 
-.input--credentials {
-  display: flex;
-}
-.input--password {
-  display: flex;
+.info-form {
+  flex-grow: 2;
+  margin: 15px 15px;
+
+  background-color: var(--form-color);
+  width: auto;
 }
 
-label {
-  margin-bottom: 8px;
+.sentence--three {
+  margin-bottom: 15px;
+}
+
+#sign-up-form {
+  display: flex;
+  align-items: stretch;
+  width: 75vw;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  width: auto;
+  color: var(--font-color-form);
+  font-size: 0.75em;
+  font-weight: 600;
+}
+
+.empty-box {
+  flex-grow: 1;
+  width: 20vw;
 }
 
 input {
-  padding: 5px 5px;
-  width: 80%;
-  border: none;
-  border-radius: 4px;
-  background-color: rgb(245, 245, 245);
+  border: 1px solid #222;
+  border-radius: 2px;
+  background-color: var(--form-input-color);
 }
 
-.bottom {
-  flex: 1 0 auto;
+label {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 30px;
 }
 
-.submit-button {
-  padding: 8px 8px;
-  border: none;
-  cursor: pointer;
-  margin-top: 12px;
-  margin-left: 12px;
+button {
   background-color: var(--button-color);
-  border-radius: 4px;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 2px;
+
+  margin-bottom: 25px;
 }
 
-.login-text {
-  margin-top: 16px;
+.sign-up {
+  margin: 15px 15px;
+  flex-grow: 1;
 }
 
-svg {
-  position: absolute;
-  left: -12px;
+#log-in:link {
+  color: val(--button-color);
+}
+#log-in:hover {
+  color: val(--button-color);
+}
+#log-in:visited {
+  color: val(--button-color);
+}
+#log-in:active {
+  color: val(--button-color);
 }
