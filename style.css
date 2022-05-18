@@ -1,10 +1,11 @@
 :root {
   --background-color: rgb(249, 250, 251);
   --form-color: rgb(255, 255, 255);
-  --button-color: rgb(10, 35, 53);
-  --font-color: rgb(165, 68, 46);
+  --button-font-color: rgb(10, 35, 53);
+  --button-color: rgb(236, 143, 111);
   --font-color-form: rgb(72, 79, 89);
   --form-input-color: rgb(255, 254, 254);
+  --font-color: rgb(10, 33, 50);
 }
 
 * {
@@ -17,6 +18,7 @@
   display: flex;
   height: 100vh;
   font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
 }
 
 .hero {
@@ -30,113 +32,102 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.17);
 }
 
-.bc {
-  background-color: var(--background-color);
+.credit {
+  position: absolute;
+
+  bottom: 10px;
 }
 
-.info {
+.info-section {
+  flex-grow: 3;
+
   display: flex;
   flex-direction: column;
-
-  width: 60vw;
 }
 
-.info--top {
+.top-section {
+  flex: 1 1 0;
+
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex-grow: 1;
-  gap: 15px;
-
-  margin: 15px 15px;
-  font-size: 1em;
-  width: auto;
+  align-items: flex-end;
+  margin-bottom: 20px;
 }
 
-.sentence--one {
-  align-self: center;
-  width: auto;
-}
+.sentences {
+  flex: 4 1 0;
+  margin: 30px 50px;
 
-.sentence--two {
-  margin-bottom: 15px;
-  width: auto;
-}
-
-.form-box {
-  display: flex;
-}
-
-.info-form {
-  flex-grow: 2;
-  margin: 15px 15px;
-
-  background-color: var(--form-color);
-  width: auto;
-}
-
-.sentence--three {
-  margin-bottom: 15px;
-}
-
-#sign-up-form {
-  display: flex;
-  align-items: stretch;
-  width: 75vw;
-  flex-wrap: wrap;
-  gap: 20px;
-
-  width: auto;
-  color: var(--font-color-form);
-  font-size: 0.75em;
   font-weight: 600;
+  color: var(--font-color);
+}
+
+.sentence-one {
+  padding-bottom: 20px;
 }
 
 .empty-box {
-  flex-grow: 1;
-  width: 20vw;
+  flex: 1 0 auto;
 }
 
-input {
-  border: 1px solid #222;
-  border-radius: 2px;
-  background-color: var(--form-input-color);
+.form-section {
+  flex: 1 1 0;
+
+  display: flex;
+
+  background-color: var(--form-color);
+}
+
+.left-side {
+  flex: 6 1 0;
+  margin: 60px 50px;
+}
+
+.lets-do-this {
+  margin-top: -30px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+#form-info {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 label {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin-right: 30px;
+  flex: 0 1 40%;
+
+  font-size: 0.8em;
+}
+
+.right-side {
+  flex: 1 1 0;
+}
+
+.bottom-section {
+  flex: 1 1 0;
+  display: flex;
+  background-color: var(--background-color);
+  justify-content: flex-start;
+  margin: 30px 50px;
+}
+
+.small-container {
+  align-self: flex-start;
 }
 
 button {
+  padding: 8px 20px;
+  margin-bottom: 20px;
   background-color: var(--button-color);
-  color: white;
   border: none;
-  padding: 10px 40px;
-  border-radius: 2px;
-
-  margin-bottom: 25px;
-}
-
-.sign-up {
-  margin: 15px 15px;
-  flex-grow: 1;
-}
-
-#log-in:link {
-  color: val(--button-color);
-}
-#log-in:hover {
-  color: val(--button-color);
-}
-#log-in:visited {
-  color: val(--button-color);
-}
-#log-in:active {
-  color: val(--button-color);
+  border-radius: 4px;
+  color: var(--button-font-color);
 }

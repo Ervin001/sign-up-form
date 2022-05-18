@@ -16,9 +16,9 @@
   <body>
     <div class="container">
       <div class="hero">
-        <div class="image"></div>
-        <div class="logo"></div>
-        <!-- <div class="credit">
+        <div class="image-background"></div>
+
+        <div class="credit">
           Photo by
           <a
             href="https://unsplash.com/@messrro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
@@ -26,60 +26,70 @@
           >
           on
           <a
-            href="https://unsplash.com/t/3d-renders?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            href="https://unsplash.com/@messrro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
             >Unsplash</a
           >
-        </div> -->
-      </div>
-      <div class="info">
-        <div class="info--top bc">
-          <div class="sentence--one">
-            This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. Sign up
-            <em>now</em> to get started.
-          </div>
-          <div class="sentence--two">You know you want to.</div>
         </div>
-        <div class="info-form">
-          <div class="sentence--three">Let's do this!</div>
-          <div class="form-box">
-            <form action="#" id="sign-up-form">
-              <label for="first-name"
+      </div>
+      <div class="info-section">
+        <div class="top-section">
+          <div class="sentences">
+            <div class="sentence-one">
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+              <br />Sign up <em>now</em> to get started.
+            </div>
+            <div class="sentence-two">You <em>know</em> you want to.</div>
+          </div>
+          <div class="empty-box"></div>
+        </div>
+        <div class="form-section">
+          <div class="left-side">
+            <div class="lets-do-this">Let's do this!</div>
+            <form action="#" id="form-info">
+              <label for="fname"
                 >First Name
-                <input type="text" id="first-name" name="first-name" />
+                <input type="text" id="fname" name="fname" />
               </label>
-              <label for="last-name"
+
+              <label for="lname"
                 >Last Name
-                <input type="text" id="last-name" name="last-name" />
+                <input type="text" id="lname" name="lname" />
               </label>
+
               <label for="email"
                 >Email
                 <input type="email" id="email" name="email" />
               </label>
-              <label for="phone-number"
+
+              <label for="tel-num"
                 >Phone Number
-                <input type="tel" id="phone-number" name="phone-number" />
+                <input type="tel" id="tel-num" name="tel-num" />
               </label>
-              <label for="password"
+
+              <label for="passw"
                 >Password
-                <input type="password" id="password" name="password" />
+                <input type="password" id="passw" name="passw" />
               </label>
-              <label for="confirm-password"
+
+              <label for="confirm-passw"
                 >Confirm Password
                 <input
                   type="password"
-                  id="confirm-password"
-                  name="confirm-password"
+                  id="confirm-passw"
+                  name="confirm-passw"
                 />
               </label>
             </form>
-            <div class="empty-box"></div>
           </div>
+          <div class="right-side"></div>
         </div>
-        <div class="sign-up bc">
-          <button>Sign up</button>
-          <div class="sign-up">
-            Already have an account? <a id="log-in" href="#">Log in</a>
+        <div class="bottom-section">
+          <div class="small-container">
+            <button type="submit" form="form-info">Create Account</button>
+            <div class="log-in-question">
+              Already have an account? <a href="#">Log in</a>
+            </div>
           </div>
         </div>
       </div>
